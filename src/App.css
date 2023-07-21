@@ -1,0 +1,61 @@
+/* src/App.css */
+
+.app {
+  margin: 16px;
+}
+
+.issue-card-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 16px;
+}
+
+.issue-card {
+  border: 1px solid #ccc;
+  padding: 16px;
+  border-radius: 8px;
+  transition: box-shadow 0.3s ease;
+}
+
+.issue-card:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.issue-title {
+  font-size: 18px;
+  font-weight: bold;
+  color: #0366d6;
+  margin-bottom: 8px;
+}
+
+.pagination {
+  margin-top: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pagination button {
+  padding: 10px 20px;
+  margin: 0 5px;
+  background-color: #0366d6;
+  color: #fff;
+  border: none;
+  border-radius: 30px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.pagination button:hover {
+  background-color: #0350a3;
+}
+
+.pagination button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.pagination button.active {
+  background-color: #0350a3;
+}
